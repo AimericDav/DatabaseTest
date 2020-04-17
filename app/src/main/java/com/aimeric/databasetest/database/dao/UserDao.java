@@ -18,7 +18,7 @@ public interface UserDao {
     @Insert
     void insertUser(User user);
 
-    @Query("SELECT * FROM user WHERE id = :id")
-    long deleteUser(long id);
+    @Query("DELETE FROM user WHERE id = :id")
+    void deleteUser(long id);
 
 }
